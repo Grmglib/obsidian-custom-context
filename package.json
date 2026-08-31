@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "custom-context",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Customize the editor right-click context menu by hiding items and adding commands.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {

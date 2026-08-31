@@ -1,8 +1,20 @@
-/*
+/* Hidden context-menu items (editor surface). */
+.menu-item.cc-hidden-item,
+.menu-separator.cc-hidden-item {
+	display: none !important;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* Settings list rows */
+.cc-list-row {
+	padding-left: 0.5em;
+}
 
-If your plugin does not need CSS, delete this file.
+.cc-list-row .setting-item-control {
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0.25em;
+}
 
-*/
+.cc-list-row input[type='text'] {
+	min-width: 10em;
+}
