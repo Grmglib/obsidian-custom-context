@@ -2,7 +2,7 @@
 	"id": "custom-context",
 	"name": "Custom Context",
 	"version": "1.0.0",
-	"minAppVersion": "1.2.3",
+	"minAppVersion": "1.13.7",
 	"description": "Customize the editor right-click context menu by hiding items and adding commands.",
 	"author": "Grmglib",
 	"authorUrl": "",
