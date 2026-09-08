@@ -19,7 +19,7 @@ export function findCodeBlockAtLine(editor: Editor, line: number): CodeBlockRang
 	let openLine = -1;
 	let openFence = '';
 
-	for (let i = 0; i <= line; i++) {
+	for (let i = 0; i < lineCount; i++) {
 		const match = editor.getLine(i).match(FENCE_RE);
 		if (!match) continue;
 
@@ -35,7 +35,7 @@ export function findCodeBlockAtLine(editor: Editor, line: number): CodeBlockRang
 			fence[0] === openFence[0] &&
 			fence.length >= openFence.length
 		) {
-			if (i >= line && openLine <= line) {
+			if (openLine <= line && line <= i) {
 				return { startLine: openLine, endLine: i };
 			}
 			openLine = -1;
